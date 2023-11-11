@@ -39,7 +39,7 @@ export class Server {
             res.sendFile(indexPath);
         });
         
-        this.app.listen(3000, ()=>{
+        this.app.listen(this.port, ()=>{
             console.log(`Servidor corriendo en el puerto ${this.port}`);
         });
 
